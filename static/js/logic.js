@@ -61,7 +61,7 @@ d3.json(url).then((data) => {
     var legend = L.control({ position: 'bottomright' });
     legend.onAdd = () => {
         var div = L.DomUtil.create('div', 'info legend');
-        depths = [-10, 10, 30, 50, 70, 90]; // Corrected depths array
+        depths = [-10, 10, 30, 50, 70, 90];
 
         for (var i = 0; i < depths.length; i++) { 
             var color = colorFetch(depths[i] + 1);
